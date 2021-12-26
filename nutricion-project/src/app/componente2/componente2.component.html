@@ -1,0 +1,279 @@
+<p-tabView>
+    <p-tabPanel header="Modal">
+        <!--INICIO CONTENIDO-->
+        <p>MODAL</p>
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Launch demo modal
+          </button>
+        <br>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        ...
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--FINAL CONTENIDO-->
+    </p-tabPanel>
+    <p-tabPanel header="Modal 2">
+        <!--INICIO CONTENIDO-->
+        <p>STATIC MODAL</p>
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+            Launch static backdrop modal
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        ...
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Understood</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!--FINAL CONTENIDO-->
+    </p-tabPanel>
+    <p-tabPanel header="Text Bootstrap">
+        <!--INCICIO CONTENIDO-->
+        <form>
+            <div class="row">
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="Nombre(s)">
+                </div>
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="Apellido Paterno">
+                </div>
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="Apellidos Materno">
+                </div>
+            </div>
+        </form>
+        <!--FINAL CONTENIDO-->
+    </p-tabPanel>
+    <p-tabPanel header="Text PrimeNG">
+        <!--INICIO CONTENIDO-->
+        <br>
+        <form>
+            <div class="row">
+                <div class="col">
+                    <span class="p-float-label">
+                        <input id="float-input" type="text" pInputText> 
+                        <label for="float-input">Nombre(s)</label>
+                    </span>
+                </div>
+                <div class="col">
+                    <span class="p-float-label">
+                        <input id="float-input" type="text" pInputText> 
+                        <label for="float-input">Apellido Paterno</label>
+                    </span>
+                </div>
+                <div class="col">
+                    <span class="p-float-label">
+                        <input id="float-input" type="text" pInputText> 
+                        <label for="float-input">Apellido Materno</label>
+                    </span>
+                </div>
+            </div>
+        </form>
+        <!--FINAL CONTENIDO-->
+    </p-tabPanel>
+    <p-tabPanel header="Tamaño">
+        <!--INICIO-->
+        <input class="form-control form-control-lg" type="text" placeholder=".form-control-lg">
+        <input class="form-control" type="text" placeholder="Default input">
+        <input class="form-control form-control-sm" type="text" placeholder=".form-control-sm">
+        <!--FIn-->
+    </p-tabPanel>
+    <p-tabPanel header="Read only">
+        <!--INICIO-->
+        <input class="form-control" type="text" placeholder="Readonly input here..." readonly>
+        <!--FIN-->
+    </p-tabPanel>
+    <p-tabPanel header="Form 1">
+        <!--INICIO-->
+        <form>
+            <div class="form-group row">
+                <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+                <div class="col-sm-10">
+                    <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="email@example.com">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+                <div class="col-sm-10">
+                    <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+                </div>
+            </div>
+        </form>
+        <!--FIN-->
+    </p-tabPanel>
+    <p-tabPanel header="Form 2">
+        <!--INICIO-->
+        <form class="form-inline">
+            <div class="form-group mb-2">
+                <label for="staticEmail2" class="sr-only">Email</label>
+                <input type="text" readonly class="form-control-plaintext" id="staticEmail2" value="email@example.com">
+            </div>
+            <div class="form-group mx-sm-3 mb-2">
+                <label for="inputPassword2" class="sr-only">Password</label>
+                <input type="password" class="form-control" id="inputPassword2" placeholder="Password">
+            </div>
+            <button type="submit" class="btn btn-primary mb-2">Confirm identity</button>
+        </form>
+        <!--FIN-->
+    </p-tabPanel>
+    <p-tabPanel header="Form 3">
+        <!--INICIO-->
+        <form>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="inputEmail4">Email</label>
+                    <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="inputPassword4">Password</label>
+                    <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputAddress">Address</label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+            </div>
+            <div class="form-group">
+                <label for="inputAddress2">Address 2</label>
+                <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="inputCity">City</label>
+                    <input type="text" class="form-control" id="inputCity">
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="inputState">State</label>
+                    <select id="inputState" class="form-control">
+                  <option selected>Choose...</option>
+                  <option>...</option>
+                </select>
+                </div>
+                <div class="form-group col-md-2">
+                    <label for="inputZip">Zip</label>
+                    <input type="text" class="form-control" id="inputZip">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">
+                  Check me out
+                </label>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Sign in</button>
+        </form>
+
+        <!--FIN-->
+    </p-tabPanel>
+    <p-tabPanel header="Form 4">
+        <!--INICIO-->
+        <form>
+            <div class="form-group row">
+                <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+                <div class="col-sm-2">
+                    <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+                <div class="col-sm-2">
+                    <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                </div>
+            </div>
+            <fieldset class="form-group">
+                <div class="row">
+                    <legend class="col-form-label col-sm-2 pt-0">Radios</legend>
+                    <div class="col-sm-10">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                            <label class="form-check-label" for="gridRadios1">
+                      First radio
+                    </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                            <label class="form-check-label" for="gridRadios2">
+                      Second radio
+                    </label>
+                        </div>
+                        <div class="form-check disabled">
+                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3" disabled>
+                            <label class="form-check-label" for="gridRadios3">
+                      Third disabled radio
+                    </label>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+            <div class="form-group row">
+                <div class="col-sm-2">Checkbox</div>
+                <div class="col-sm-10">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck1">
+                        <label class="form-check-label" for="gridCheck1">
+                    Example checkbox
+                  </label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-sm-10">
+                    <button type="submit" class="btn btn-primary">Sign in</button>
+                </div>
+            </div>
+        </form>
+
+        <!--FIN-->
+    </p-tabPanel>
+    <p-tabPanel header="Form 5">
+        <!--INICIO-->
+        <form>
+            <div class="form-row">
+                <div class="col-7">
+                    <input type="text" class="form-control" placeholder="City">
+                </div>
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="State">
+                </div>
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="Zip">
+                </div>
+            </div>
+        </form>
+        <!--FIN-->
+    </p-tabPanel>
+
+</p-tabView>
