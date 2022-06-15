@@ -7,6 +7,7 @@ import { DbzService } from '../services/dbz.service';
 })
 export class PersonajesComponent{
 
+  //Crea y devuelve personajes: Personaje[]
   get personajes(){
     return this.dbzService.personajes;
   }

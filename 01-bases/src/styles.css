@@ -40,6 +40,9 @@ button:focus {
     padding: 1px;
 }
 
+
+/* MOSTRAR CONTENIDO EN DOS COLUMNAS EN main-page.componente.html */
+
 .row {
     display: flex;
 }
@@ -53,3 +56,6 @@ input {
     display: block;
     margin: 5px;
 }
+
+
+/* FIN */

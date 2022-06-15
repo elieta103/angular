@@ -5,6 +5,7 @@ import { Personaje } from '../interfaces/dbz.interfaces';
 @Injectable()
 export class DbzService{
 
+    // _personajes indica que es un propiedad privada, solo es una convencion
     private _personajes: Personaje[] = [
         {
           nombre: 'Goku',
@@ -16,6 +17,7 @@ export class DbzService{
         }
       ];
     
+      //Separa cada uno de los elementos del array y crea uno nuevo
     get personajes(): Personaje[]{
         return [...this._personajes];
     }

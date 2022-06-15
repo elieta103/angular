@@ -14,10 +14,18 @@ export class AgregarComponent {
   }
 
   //@Output() onNuevoPersonaje: EventEmitter<Personaje> = new EventEmitter();
+  // @Input()   recibe un componente del padre
+  // @Output()  emite un valor al padre
+
+  // () Emite o escucha eventos (click)
+  // [] Establecer propiedades
+  // [()] Two way data binding
 
   constructor(private dbzService: DbzService){}
 
   agregar(){
+    //En html agregar($event), recibir el evento => event.preventDefault()
+    //Con la directiva (ngSubmit), evita el refresh del navegador
     if(this.nuevo.nombre.trim().length ===0 ){
       return;
     }

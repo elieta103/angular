@@ -5,7 +5,7 @@ interface PersonajeLOR{
 }
 
 function  curar (personaje: PersonajeLOR, curarX: number): void{
-    personaje.pv +=curarX;
+    personaje.pv += curarX;
 }
 
 const nuevoPersonaje: PersonajeLOR = {
