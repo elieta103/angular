@@ -1,0 +1,46 @@
+<div class="alert alert-info" *ngIf="!pais; else divPais">
+    Espere mientras carga la información ...
+</div>
+
+<ng-template #divPais>
+    <div class="row">
+        <div class="col-12">
+            <h1>Pais : <small>{{pais.name.common}}</small></h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-4">
+            <h3>Bandera : <img class="img-thumbnail" [src]="pais.flags.png"></h3>
+        </div>
+
+        <div class="col">
+            <h3>Información : </h3>
+            <ul class="list-group">
+                <li class="list-group-item">
+                    Población :<strong> {{pais.population | number}}</strong>
+                </li>
+                <li class="list-group-item">
+                    Código numérico :<strong> {{pais.ccn3 | number}}</strong>
+                </li>
+                <li class="list-group-item">
+                    Código alfanumérico :<strong> {{pais.cca3}}</strong>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+    <h3>Traducciones : </h3>
+    <div class="row">
+        <div class="col">
+
+            <span class="badge bg-primary mr-1" *ngFor="let translation of translations">
+                {{ translation }}
+            </span>
+        </div>
+    </div>
+</ng-template>
+
+<!--pre class="mt-5">
+    {{pais.translations | json}}
+</pre-->

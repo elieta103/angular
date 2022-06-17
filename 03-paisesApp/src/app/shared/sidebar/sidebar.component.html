@@ -1,0 +1,13 @@
+<h2>Busquedas</h2>
+<hr>
+<ul class="list-group">
+    <!--Si el path de la ruta no fuera vacio, no seria necesario el [routerLinkActiveOptions]="{exact:true}",
+                En este caso se agrega para que no aparezca siempre seleccionado en azul
+                routerLink => La ruta
+                routerLinkActive="active" =>  Para que se remarque en azul, el seleccionado
+                [routerLinkActiveOptions]="{exact:true}"  => Evitar que siempre este seleccionada
+            -->
+    <li class="list-group-item" routerLink="" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">Buscar por país</li>
+    <li class="list-group-item" routerLink="region" routerLinkActive="active">Buscar por Región</li>
+    <li class="list-group-item" routerLink="capital" routerLinkActive="active">Buscar por Capital</li>
+</ul>

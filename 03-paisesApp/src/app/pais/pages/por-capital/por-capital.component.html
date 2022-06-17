@@ -1,0 +1,24 @@
+<div class="animate__animated animate__fadeIn animate__faster">
+    <h2>Por Capital</h2>
+    <hr>
+
+    <div class="row">
+        <div class="col">
+            <!--() EMITE VALORES @Output(),  [] RECIBE VALORES PADRE ENVIA->HIJO  @Input()-->
+            <app-pais-input placeholder="Buscar capital..." (onDebounce)="sugerencias($event)" (onEnter)="buscar($event)"></app-pais-input>
+        </div>
+    </div>
+</div>
+
+
+<hr>
+<div class="alert alert-danger" *ngIf="hayError">
+    No se encontró ningun resultado, con el término de busqueda : {{termino}}
+</div>
+
+<div class="row" *ngIf="paises.length >0">
+    <div class="col">
+        <!--() EMITE VALORES @Output(),  [] RECIBE VALORES PADRE ENVIA->HIJO @Input()-->
+        <app-pais-tabla [paises]="paises"></app-pais-tabla>
+    </div>
+</div>

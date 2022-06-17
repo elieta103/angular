@@ -1,0 +1,32 @@
+<div class="animate__animated animate__fadeIn animate__faster">
+    <h2>Por País</h2>
+    <hr>
+
+    <div class="row">
+        <div class="col">
+            <!--() EMITE VALORES @Output(),  [] RECIBE VALORES PADRE ENVIA->HIJO  @Input()-->
+            <app-pais-input placeholder="Buscar pais..." (onDebounce)="sugerencias($event)" (onEnter)="buscar($event)"></app-pais-input>
+        </div>
+    </div>
+</div>
+
+<ul *ngIf="mostrarSugerencias" class="list-group">
+    <li class="list-group-item list-group-item-action" *ngFor="let paisSugerido of paisesSugeridos">
+        <a class="nav-link" [routerLink]="['/pais', paisSugerido.cca2]" routerLinkActive="router-link-active">{{paisSugerido.name.common}}</a>
+    </li>
+    <li class="list-group-item list-group-item-action">
+        <a (click)="buscarSugerido(termino)" class="nav-link"> Buscar "{{termino}}"</a>
+    </li>
+</ul>
+
+<hr>
+<div class="alert alert-danger" *ngIf="hayError">
+    No se encontró ningun resultado, con el término de busqueda : {{termino}}
+</div>
+
+<div class="row" *ngIf="paises.length >0">
+    <div class="col">
+        <!--() EMITE VALORES @Output(),  [] RECIBE VALORES PADRE ENVIA->HIJO @Input()-->
+        <app-pais-tabla [paises]="paises"></app-pais-tabla>
+    </div>
+</div>
