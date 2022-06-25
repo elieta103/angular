@@ -1,0 +1,13 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import url("../node_modules/primeicons/primeicons.css");
+@import url("../node_modules/primeng/resources/themes/saga-blue/theme.css");
+@import url("../node_modules/primeng/resources/primeng.min.css");
+@import url("../node_modules/primeflex/primeflex.css");
+
+/* Control en el tamaño de letra, para controlar el tamaño de los componentes*/
+
+html,
+body {
+    font-size: 14px;
+}

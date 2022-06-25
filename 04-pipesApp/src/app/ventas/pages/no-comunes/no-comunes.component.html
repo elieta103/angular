@@ -1,0 +1,56 @@
+<div>
+    <h1>Pipes no tan comunes</h1>
+    <p>Pipes incluidos en Angular - Usualmente en Common Module</p>
+</div>
+
+<div class="grid">
+    <div class="col md:col-6">
+        <p-fieldset legend="i18n Selected Pipe" [toggleable]="true">
+            <p>Saludos {{nombre}}, es un placer {{genero | i18nSelect : invitacionMapa}} a nuestro evento.</p>
+            <button pButton pRipple (click)="cambiarPersona()" label="Cambiar Persona" class="p-button-outlined p-button-info"></button>
+        </p-fieldset>
+    </div>
+    <div class="col md:col-6">
+        <p-fieldset legend="i18n Plural Pipe" [toggleable]="true">
+            <p>Actualmente {{clientes.length | i18nPlural:clientesMapa}}</p>
+            <button pButton pRipple (click)="borrarCliente()" label="Borrar Cliente" class="p-button-outlined p-button-info"></button>
+        </p-fieldset>
+    </div>
+    <div class="col md:col-6">
+        <p-fieldset legend="Slice Pipe" [toggleable]="true">
+            <b>Original</b>
+            <pre>{{clientes}}</pre>
+
+            <b>Slice:0:2</b>
+            <pre>{{clientes | slice:0:2}}</pre>
+
+            <b>Slice:1:2</b>
+            <pre>{{clientes | slice:1:2}}</pre>
+
+        </p-fieldset>
+    </div>
+
+    <div class="col md:col-6">
+        <p-fieldset legend="JSON Pipe" [toggleable]="true">
+            {{heroes | json}}
+        </p-fieldset>
+    </div>
+
+    <div class="col md:col-6">
+        <p-fieldset legend="Key Value Pipe" [toggleable]="true">
+            <ul>
+                <li *ngFor="let item of persona | keyvalue"> <b>{{item.key | titlecase}} : </b> {{item.value}}</li>
+            </ul>
+        </p-fieldset>
+    </div>
+
+    <div class="col md:col-6">
+        <p-fieldset legend="Async Pipe" [toggleable]="true">
+            <pre *ngIf="!(miObservable | async)">Resolviendo Observable ...</pre>
+            <pre>{{miObservable | async}}</pre>
+            <pre *ngIf="!(valorPromesa | async)">Resolviendo promesa ...</pre>
+            <pre>{{valorPromesa | async}}</pre>
+        </p-fieldset>
+    </div>
+
+</div>
