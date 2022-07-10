@@ -1,0 +1,21 @@
+<h1>Listado de Héroes</h1>
+<mat-divider></mat-divider>
+<br>
+
+<!--USO DE ANGULAR FLEX
+fxLayout="row wrap" Use todo el row sin desbordarse
+fxFlex="30"  30% de la pantalla
+fxLayoutAlign="center" Hijos se ponen centrados (mismo espacio derecha e izquierda)
+fxLayoutGap="20px"  Separacion Horizontal
+ margin-top: 20xp; CSS en el Componente listado.componente.ts Separacion de arriba
+
+Flex- Responsivo para diferentes pantallas
+xFlex.lg="15" fxFlex.sm="30"
+fxLayout.xs="column"  Para pantallas muy pequeñas, cambia de renglon a mostrar una columna
+-->
+
+<div fxLayout="row wrap" fxLayout.xs="column" fxLayoutAlign="center" fxLayoutGap="20px">
+    <div fxFlex="20" fxFlex.lg="15" fxFlex.sm="30" *ngFor="let heroe of heroes">
+        <app-heroe-tarjeta [heroe]="heroe"></app-heroe-tarjeta>
+    </div>
+</div>

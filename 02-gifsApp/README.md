@@ -1,3 +1,27 @@
+# La sección contendrá nuestra primera aplicación real de Angular, este es un breve listado de los temas fundamentales:
+
+## Modularización de la aplicación
+
+## Estructura de la aplicación de media a gran escapa
+
+## Componentes
+
+## ViewChild
+
+## Servicios
+
+## Historial de búsquedas
+
+## Uso de Api Keys
+
+## LocalStorage
+
+## Peticiones HTTP
+
+## Animaciones mediante css
+
+
+
 # 02GifsApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.2.
