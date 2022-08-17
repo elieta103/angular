@@ -1,0 +1,59 @@
+<h2>Template: Básicos</h2>
+<hr>
+
+<div class="row">
+    <div class="col">
+        <form (ngSubmit)="guardar()" #miFormulario="ngForm" autocomplete="off">
+            <!--Campo de producto-->
+            <div class="mb-3 row">
+                <label class="col-sm-3 col-form-label" for="producto">Producto</label>
+                <div class="col-sm-9">
+                    <input type="text" [ngModel]="initForm.producto" name="producto" required minlength="3" class="form-control" placeholder="Nombre del Producto" id="producto">
+                    <span *ngIf="nombreValido()" class="form-text text-danger">Debe ser de 3 letras</span>
+                </div>
+            </div>
+            <!--Campo de precio-->
+            <div class="mb-3 row">
+                <label class="col-sm-3 col-form-label" for="precio">Precio</label>
+                <div class="col-sm-9">
+                    <input type="number" [ngModel]="initForm.precio" name="precio" required min="0" class="form-control" placeholder="Precio del Producto" id="precio">
+                    <span *ngIf="precioValido()" class="form-text text-danger">El precio debe ser mayor a 0</span>
+                </div>
+            </div>
+            <!--Campo de existencias-->
+            <!--Uso de la directiva para la validacion : customMin [minimo]="0" -->
+            <div class="mb-3 row">
+                <label class="col-sm-3 col-form-label" for="existencias">Existencias</label>
+                <div class="col-sm-9">
+                    <input type="number" type="number" [ngModel]="initForm.existencias" name="existencias" customMin [minimo]="0" required class="form-control" placeholder="Existencias del Producto" id="existencias">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <button class="btn btn-primary float-end" type="submit" [disabled]="miFormulario.invalid">Guardar</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col">
+        <span>Valid</span>
+        <pre>{{miFormulario.valid}}</pre>
+
+        <span>Pristine</span>
+        <pre>{{miFormulario.pristine}}</pre>
+
+        <span>Touched</span>
+        <pre>{{miFormulario.touched}}</pre>
+
+        <span>Value</span>
+        <pre>{{miFormulario.value | json}}</pre>
+
+        <span>CustomDirective</span>
+        <pre>{{miFormulario.controls['existencias']?.errors | json}}</pre>
+
+    </div>
+</div>
