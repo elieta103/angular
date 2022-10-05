@@ -1,41 +1,10 @@
-# Este es un breve listado de los temas fundamentales:
+# AppTest
 
-## Rutas
-
-## RouterLink y RouterLinkActive
-
-## Componentes especializados
-
-## DebounceTime
-
-## Inputs
-
-## SwitchMaps
-
-## Consumo de APIs
-
-## Tipado de datos
-
-## Menú de aplicación
-
-## ngClass y diferentes formas de manipular clases
-
-## CSS condicionales
-
-## Optimizaciones a peticiones HTTP
-
-## Animaciones de CSS
-
-## Auto-completado en la búsqueda de países
-
-
-# 03PaisesApp
-
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.2.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.4.
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
 ## Code scaffolding
 

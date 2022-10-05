@@ -1,53 +1,10 @@
-Todos los Pipes de Angular a la fecha
+# AppTest
 
-Uppercase
-
-Lowercase
-# PIPES
-
-## TitleCase
-
-## Date
-
-## Decimal
-
-## Currency
-
-## Percent
-
-## i18nSelect
-
-## i18Plural
-
-## KeyValue
-
-## Json
-
-## Async
-
-## PrimeNG
-
-## Módulo especializado para módulos de PrimeNG
-
-## Pipes personalizados
-
-## Argumentos hacia los Pipes
-
-## SortableTable manual y usando PrimeNg
-
-
-
-
-
-
-
-# 04PipesApp
-
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.2.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.4.
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
 ## Code scaffolding
 

@@ -1,34 +1,10 @@
-# La sección contendrá nuestra primera aplicación real de Angular, este es un breve listado de los temas fundamentales:
+# AppTest
 
-## Modularización de la aplicación
-
-## Estructura de la aplicación de media a gran escapa
-
-## Componentes
-
-## ViewChild
-
-## Servicios
-
-## Historial de búsquedas
-
-## Uso de Api Keys
-
-## LocalStorage
-
-## Peticiones HTTP
-
-## Animaciones mediante css
-
-
-
-# 02GifsApp
-
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.2.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.4.
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
 ## Code scaffolding
 
