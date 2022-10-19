@@ -1,0 +1,33 @@
+1. Escribir las rutas hijas del <NombreModulo>-routing.module.ts  Ejem:
+
+const routes: Routes = [
+  {
+    path :'',
+    children:[
+      {path:'fullscreen', component: FullScreenComponent},
+      {path:'zoon-range', component: ZoomRangeComponent},
+      {path:'marcadores', component: MarcadoresComponent},
+      {path:'propiedades', component: PropiedadesComponent},
+      {path:'**', redirectTo: 'fullscreen'},
+    ]
+  }
+];
+
+2. Escribir las rutas principales en app-routing.module.ts   Ejem:
+
+const routes: Routes = [
+      {
+        path:'mapas',
+        loadChildren: () => import('./mapas/mapas.module').then(m => m.MapasModule)
+      },
+      {
+        path:'**',
+        redirectTo: 'mapas'
+      },
+];
+
+3. Designar el lugar donde se cargaran las rutas en app.component.html  Ejem:
+<h1>Maps !!</h1>
+<hr>
+<router-outlet></router-outlet>
+

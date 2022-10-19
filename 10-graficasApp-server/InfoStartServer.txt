@@ -1,0 +1,8 @@
+INSTALAR DEPENDENCIA
+npm install -g json-server
+
+INICIAR SERVER
+json-server --watch db.json
+
+VER INFORMACION
+http://localhost:3000/posts/1
