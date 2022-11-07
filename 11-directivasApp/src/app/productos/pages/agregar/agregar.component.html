@@ -1,0 +1,45 @@
+<h1 class="mt-5">Agregar producto</h1>
+<hr>
+
+<form [formGroup]="miFormulario">
+  <div class="row g-3 align-items-center mb-3">
+    <div class="col-auto">
+      <label class="col-form-label">Nombre :</label>
+    </div>
+    <div class="col-auto">
+      <input type="text" class="col-form-control" formControlName="nombre">
+    </div>
+    <div class="col-auto" *ngIf="tieneError('nombre')">
+      <!-- Cuando no se mandan propiedades, por default pinta (Campo requerido.) y color rojo-->
+      <!-- mensaje y color son opcionales. -->
+      <!-- Se puede asignar propiedades de manera dinamica con :
+            [mensaje]="propiedadMensaje" [color]="propiedadColor" -->
+      <span error-msg
+            [mensaje]="propiedadMensaje"
+            [color]="propiedadColor"
+            [valido]="!tieneError('nombre')" ></span>
+    </div>
+  </div>
+
+  <div class="row mt-3">
+    <div class="col">
+      <button class="btn btn-primary" (click)="cambiarNombre()">Cambiar Nombre</button>
+      <button class="btn btn-primary" (click)="cambiarColor()">Cambiar Color</button>
+
+    </div>
+  </div>
+</form>
+
+
+<h3 class="mt-5">Formulario</h3>
+<pre>Valid : {{miFormulario.valid}}</pre>
+<pre>Value : {{miFormulario.value | json}}</pre>
+
+<!--Se muestra si no tiene Error, Solo si es valid-->
+<div class="row mt-5" *customIf="miFormulario.valid">
+  <div class="col">
+    <div class="alert alert-primary">
+      Todo OK!
+    </div>
+  </div>
+</div>
